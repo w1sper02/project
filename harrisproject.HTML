@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Framed Webpage Layout</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      background-color: #f5f5f5;
+    }
+
+    /* Main Container */
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
+      width: 90%;
+      max-width: cover;
+      min-height: 90vh;
+      background-color: pink;
+      padding: 20px;
+      border: 2px solid #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header */
+    .header {
+      grid-area: header;
+      background-color: #00a4ff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.8em;
+      border: 2px solid #333;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #eee;
+      padding: 15px;
+      border: 2px solid #333;
+    }
+
+    /* Main content */
+    .main {
+      grid-area: main;
+      padding: 0;
+      border: 2px solid #333;
+    }
+
+    /* Footer */
+    .footer {
+      grid-area: footer;
+      background-color: #ff004e;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+      border: 2px solid #333;
+    }
+
+    /* Sidebar Links */
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    /* Iframe Styling */
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      HOLY CROSS OF DAVAO COLLEGE
+    </div>
+
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <h3>Poem</h3>
+      <ul>
+        <li><a href="C:\Users\User\Documents\harris\sky.HTML" target="content-frame">there is another sky</a></li>
+        <li><a href="C:\Users\User\Documents\harris\she.HTML" target="content-frame">She</a></li>
+        <li><a href="C:\Users\User\Documents\harris\love.HTML" target="content-frame">Love</a></li>
+        <li><a href="C:\Users\User\Documents\harris\Henry Wadsworth Longfellow.HTML" target="content-frame">A Gleam OF Sunshine</a></li>
+        <li><a href="C:\Users\User\Documents\harris\feather.HTML" target="content-frame">Feather</a></li>
+        <li><a href="C:\Users\User\Documents\harris\distiny.HTML" target="content-frame">Distiny</a></li>
+        <h3>Poem</h3>
+        <li><a href="C:\Users\User\Documents\harris\merry.html" target="content-frame">We Wish You a Merry Christmas</a></li>
+        <li><a href="C:\Users\User\Documents\harris\joy to the world.html" target="content-frame">Joy to the world</a></li>
+        <li><a href="C:\Users\User\Documents\harris\nigth.html" target="content-frame">Silent Night</a></li>
+        <li><a href="C:\Users\User\Documents\harris\jingle bells.html" target="content-frame">Jinggle Bells</a></li>
+        <li><a href="C:\Users\User\Documents\harris\Deck the Halls.html" target="content-frame">Deck the Halls</a></li>
+        <li><a href="C:\Users\User\Documents\harris\Rudolph the Red Nosed Reindeer.html" target="content-frame">Rudolph the Red Nosed Reindeer</a></li>
+        <h3>Info</h3>
+        <li><a href="C:\Users\User\Documents\harris\info.html" target="content-frame">About Me</a></li>
+        <h3>Contact Me</h3>
+            <li><a href=https://www.facebook.com/w1sper02>facebook</a></li></p>
+            <li><a href=https://mail.google.com/mail/u/0/?tab=rm&ogbl&pli=1#inbox?compose=XBcJlKtlMLrBQwdVvjrGNNfcHGmzbxqsbdtWCklNksRZFwlQVDhRtmbdQpBfDHQRBXpVLVrtBvXgtwFv>Gmail</a></li></p>
+            
+      </ul>
+    </div>
+
+    <!-- Main Content Section with Iframe -->
+    <div class="main">
+      <iframe name="content-frame" src="C:\Users\User\Documents\harris\.image BG.html"></iframe>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      Pakiwag Harris | 1E BSIT
+    </div>
+  </div>
+</body>
+</html>
